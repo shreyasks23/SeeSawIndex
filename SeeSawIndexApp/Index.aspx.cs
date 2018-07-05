@@ -448,7 +448,13 @@ namespace SeeSawIndexApp
         protected void Chart1_Load(object sender, EventArgs e)
         {
             Chart1.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
+            Chart1.ChartAreas[0].AxisX.Title = "Event";
+            Chart1.Series[0].IsValueShownAsLabel = true;
             Chart1.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
+            Chart1.ChartAreas[0].AxisY.Title = "Score";
+            Chart1.Series[0].Palette = System.Web.UI.DataVisualization.Charting.ChartColorPalette.Bright;
+
+            
 
         }
 
@@ -484,6 +490,11 @@ namespace SeeSawIndexApp
                 Sconnection.Close();
                 Clicked = 0;
             }
+
+        }
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
 
         }
     }

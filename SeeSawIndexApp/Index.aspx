@@ -20,8 +20,8 @@
                  <br />
                  <br />
                  <br />                 
-                <asp:Chart ID="Chart1" runat="server" DataSourceID="ChartData" BorderlineWidth="0" EnableTheming="False" OnLoad="Chart1_Load" BorderWidth="30" CssClass="align-content-md-start">
-                    <BorderSkin BackColor="Transparent" PageColor="Transparent" SkinStyle="Emboss" />
+                <asp:Chart ID="Chart1" runat="server" DataSourceID="ChartData" BorderlineWidth="0" EnableTheming="False" OnLoad="Chart1_Load">
+                    <BorderSkin BackColor="Transparent" PageColor="Transparent" SkinStyle="Raised" />
                     <Series>
                         <asp:Series ChartType="Line" Name="Series1" YValueMembers="EventScore" XValueMember="EventID" YValuesPerPoint="2">
                         </asp:Series>
